@@ -1,0 +1,151 @@
+/* Regole di reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: verdana;
+}
+/* Fine Regole di reset */
+
+/* Container */
+.container {
+  background-image: url(../img/sfondo.png);
+}
+/* Fine container */
+
+/* Wrapper */
+.wrapper {
+  width: 70%;
+  margin: auto;
+}
+/* Fine Wrapper */
+
+/* Header */
+header {
+  color: white;
+  padding-top: 20px;
+}
+
+/* immagine header */
+header .header-img {
+  height: 300px;
+  background-image: url(../img/header-img.jpg);
+  background-size: cover;
+  background-position: center;
+  border: 10px solid white;
+  text-align: center;
+  position: relative;
+}
+header .header-img .mountain {
+  font-size: 30px;
+  position: absolute;
+}
+header .header-img .title{
+  border: 5px solid white;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 50px;
+}
+header .header-img .subtitle {
+  width: 100%;
+  font-size: 20px;
+  position: absolute;
+  bottom: 40px;
+}
+
+/* menù header */
+header .header-menu {
+  background: gray;
+}
+header .header-menu .nav {
+  width: 90%;
+  height: 40px;
+  margin: auto;
+  text-align: center;
+  line-height: 40px;
+}
+header .header-menu .nav li {
+list-style-type: none;
+display: inline-block;
+}
+header .header-menu .nav li a {
+  text-decoration: none;
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  margin: 0 10px;
+}
+
+/* Fine Header */
+
+/* Main */
+main {
+  margin: 10px 0;
+}
+main .col {
+  float: left;
+}
+main .col.left {
+  width: 27%;
+  height: 300px;
+  background: violet;
+}
+main .col.center {
+  width: 42%;
+  height: 400px;
+  background: purple;
+  margin: 0 2%;
+}
+
+/* Col.right Soluzione coi margini */
+main .col.right {
+  width: 27%;
+  height: 400px;
+}
+main .col.right .box {
+  width: 100%;
+  height: 45%;
+  background: violet;
+  margin-bottom: 20px;
+}
+/* Fine Col.right Soluzione coi margini */
+
+
+/* Col.right Soluzione con position */
+/* Le dimensioni sono sempre le stesse */
+
+/*
+main .col.right {
+  width: 27%;
+  height: 400px;
+  position: relative;
+}
+main .col.right .box {
+  width: 100%;
+  height: 45%;
+  background: violet;
+}
+main .col.right .box:last-child {
+  position: absolute;
+  bottom: 5%;
+}
+ */
+
+/* Fine Col.right Soluzione con position */
+
+main::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+/* Fine Main */
+
+/* Footer */
+footer {
+  height: 100px;
+  background: lightblue;
+}
+/* Fine Footer */
