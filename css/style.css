@@ -16,13 +16,13 @@
 .wrapper {
   width: 80%;
   margin: auto;
+  padding: 20px 0;
 }
 /* Fine Wrapper */
 
 /* Header */
-header {
+header, footer {
   color: white;
-  padding-top: 20px;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -89,8 +89,11 @@ main .col {
 }
 
 /* formattazione box */
-main .col .box {
+.box {
   background: white;
+  border-radius: 5px;
+}
+main .col .box {
   margin-bottom: 40px;
 }
 main .col.left .box {
@@ -166,7 +169,31 @@ main::after {
 
 /* Footer */
 footer {
-  height: 100px;
-  background: lightblue;
+  color: lightgray;
 }
+/* autore */
+footer .autore {
+  text-align: center;
+  font-style: italic;
+}
+footer hr {
+  border: 1px solid gray;
+  margin: 0 5px;
+}
+footer .social {
+  font-size: 50px;
+}
+/* colonne social */
+footer .social div {
+  width: calc(100% / 3);
+  text-align: center;
+  margin: 50px 0;
+  float: left;
+}
+footer .social::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
 /* Fine Footer */
