@@ -3,7 +3,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: verdana;
 }
 /* Fine Regole di reset */
 
@@ -15,7 +14,7 @@
 
 /* Wrapper */
 .wrapper {
-  width: 70%;
+  width: 80%;
   margin: auto;
 }
 /* Fine Wrapper */
@@ -24,6 +23,7 @@
 header {
   color: white;
   padding-top: 20px;
+  font-family: 'Montserrat', sans-serif;
 }
 
 /* immagine header */
@@ -36,18 +36,14 @@ header .header-img {
   text-align: center;
   position: relative;
 }
-header .header-img .mountain {
-  font-size: 30px;
-  position: absolute;
-}
-header .header-img .title{
+header .header-img .title-header{
   border: 5px solid white;
   padding: 10px;
+  font-size: 50px;
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 50px;
 }
 header .header-img .subtitle {
   width: 100%;
@@ -61,8 +57,7 @@ header .header-menu {
   background: gray;
 }
 header .header-menu .nav {
-  width: 90%;
-  height: 40px;
+  width: 80%;
   margin: auto;
   text-align: center;
   line-height: 40px;
@@ -70,71 +65,97 @@ header .header-menu .nav {
 header .header-menu .nav li {
 list-style-type: none;
 display: inline-block;
+margin: 0 10px;
 }
 header .header-menu .nav li a {
   text-decoration: none;
   color: white;
   font-size: 12px;
-  font-weight: 600;
-  margin: 0 10px;
+  font-weight: bold;
 }
-
 /* Fine Header */
 
 /* Main */
 main {
   margin: 10px 0;
+  font-family: Arial;
+}
+main h2 {
+  color: brown;
+  font-weight: 500;
 }
 main .col {
   float: left;
 }
+
+/* formattazione box */
+main .col .box {
+  background: white;
+  margin-bottom: 40px;
+}
+main .col.left .box {
+  padding: 5px;
+}
+main .col.center .box,
+main .col.right .box {
+  padding: 20px;
+}
+main .col.center .box h2,
+main .col.right .box h2 {
+  margin-bottom: 30px;
+}
+main .col.center .box p,
+main .col.right .box p {
+  line-height: 35px;
+}
+
+/* colonna sinistra */
 main .col.left {
-  width: 27%;
-  height: 300px;
-  background: violet;
+  width: 20%;
 }
+
+/* colonna centrale */
 main .col.center {
-  width: 42%;
-  height: 400px;
-  background: purple;
-  margin: 0 2%;
+  width: 50%;
+  margin: 0 5%;
 }
 
-/* Col.right Soluzione coi margini */
+/* colonna destra */
 main .col.right {
-  width: 27%;
-  height: 400px;
+  width: 20%;
 }
-main .col.right .box {
-  width: 100%;
-  height: 45%;
-  background: violet;
-  margin-bottom: 20px;
-}
-/* Fine Col.right Soluzione coi margini */
 
+/* titolo box colonna di sinistra */
 
-/* Col.right Soluzione con position */
-/* Le dimensioni sono sempre le stesse */
-
-/*
-main .col.right {
-  width: 27%;
-  height: 400px;
-  position: relative;
+/* logo wifi */
+main .col.left .title  .wifi {
+  width: 20%;
+  color: orange;
+  text-align: center;
+  float: left;
 }
-main .col.right .box {
-  width: 100%;
-  height: 45%;
-  background: violet;
+/* testo del titolo */
+main .col.left .title .title-left {
+  width: 80%;
+  float: left;
 }
-main .col.right .box:last-child {
-  position: absolute;
-  bottom: 5%;
+main .col.left .title::after {
+  content: '';
+  display: table;
+  clear: both;
 }
- */
-
-/* Fine Col.right Soluzione con position */
+/* lista di link */
+main .col.left .link-list {
+  margin-top: 10px;
+  list-style-type: none;
+}
+main .col.left .link-list li {
+  margin-bottom: 15px;
+}
+main .col.left .link-list li a {
+  color: green;
+  text-decoration: none;
+}
 
 main::after {
   content: '';
