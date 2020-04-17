@@ -63,15 +63,24 @@ header .header-menu {
   background: gray;
 }
 header .header-menu .nav {
-  width: 80%;
+  width: 65%;
   margin: auto;
-  text-align: center;
   line-height: 40px;
 }
 header .header-menu .nav li {
-list-style-type: none;
-display: inline-block;
-margin: 0 10px;
+  text-align: center;
+  list-style-type: none;
+  display: inline-block;
+  padding: 0 10px;
+  float: left;
+}
+header .header-menu .nav li:hover {
+  background: brown;
+}
+header .header-menu .nav::after {
+  content: '';
+  display: table;
+  clear: both;
 }
 header .header-menu .nav li a {
   text-decoration: none;
@@ -98,16 +107,11 @@ main .col {
 .box {
   background: white;
   border-radius: 5px;
-}
-main .col .box {
   margin-bottom: 40px;
+  padding: 20px;
 }
 main .col.left .box {
   padding: 5px;
-}
-main .col.center .box,
-main .col.right .box {
-  padding: 20px;
 }
 main .col.center .box h2,
 main .col.right .box h2 {
@@ -140,6 +144,7 @@ main .col.right {
 main .col.left .title  .wifi {
   width: 20%;
   color: orange;
+  font-size: 35px;
   text-align: center;
   float: left;
 }
@@ -159,7 +164,12 @@ main .col.left .link-list {
   list-style-type: none;
 }
 main .col.left .link-list li {
-  margin-bottom: 15px;
+  padding: 5px;
+}
+main .col.left .link-list li:hover {
+  background-color: lightgray;
+  border-style: inset;
+  border-radius: 5px;
 }
 main .col.left .link-list li a {
   color: green;
